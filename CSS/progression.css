@@ -1,0 +1,127 @@
+body {
+    background-color: #fffcef;
+}
+
+.search-container {
+    padding-top: 2em;
+    padding-right: 3.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    gap: 1em;
+}
+
+#search, #search-btn {
+    width: 30%;
+    padding: 0.5em;
+    border: 1pt solid #7e3c3e;
+    border-radius: 5px;
+    text-align: center;
+    color: #47492B;
+    font-weight: bold;
+}
+
+#search-btn {
+    width: 30%;
+    padding: 0.5em;
+    background-color: #af793b;
+    color: #fffcef;
+    cursor: pointer;
+    border: 1pt solid #7e3c3e;
+}
+
+#search-btn > i {
+    padding-left: 0.5em;
+}
+
+.container {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    padding-bottom: 2em;
+}
+
+.progress-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding: 0.5em 2em;
+    border: 1pt solid #8f9148;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #efead7;
+}
+
+.progress-card > .student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 10%;
+    padding-right: 2em;
+    border-right: 1pt solid #8f9148;
+}
+
+.progress-card > .student > h3 {
+    color: #47492b;
+    padding: 0em;
+    margin: 0.5em 0em;
+}
+
+.progress-card > .progress-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding: 1em 0em;
+}
+
+.progress-card > .progress-info > h3 {
+    color: #47492b;
+}
+
+.progress-bar-container {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #fffcef;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #7e3c3e;
+}
+
+.progress-card > .view-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30%;
+    padding: 1em 0em;
+}
+
+.progress-card .view-btn > button {
+    background-color: #af793b;
+    color: #fffcef;
+    cursor: pointer;
+    border: 1pt solid #7e3c3e;
+    padding: 1em 3em;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.progress-card > .view-btn > button:hover {
+    background-color: #7e3c3e;
+}

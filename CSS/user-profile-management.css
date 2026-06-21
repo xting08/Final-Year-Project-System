@@ -1,0 +1,137 @@
+body {
+    background-color: #fffcef;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2.5em 0em;
+}
+
+#sort-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    gap: 1em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #6d7045;
+}
+
+#search-user{
+    display: flex;
+    gap: 0.3em;
+}
+
+#search-user input,
+#search-user select,
+#search-user button,
+#add-user button {
+    width: 12em;
+    border: 1px solid #6d7045;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+#search-user input {
+    height: 2.5em;
+}
+
+#search-user select {
+    height: 2.9em;
+}
+
+#add-user button {
+    height: 2.8em;
+    background-color: #8f9148;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+#search-user button {
+    height: 2.8em;
+    background-color: #af793b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+
+}
+
+#add-user button:hover {
+    background-color: #6d7045;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05);
+}
+
+#search-user button:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.2s;
+}
+
+.user-line {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1em; 
+    width: 93%;
+    padding-top: 2em;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0em;
+    border: 1pt solid #6d7045;
+    border-radius: 0.5em;
+    color: #47492b;
+    box-sizing: border-box; 
+    text-align: center;
+    background-color: #fffcef; 
+}
+
+.user-card h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.user-card > hr {
+    width: 80%;
+    border: 1pt solid #d3cdad;
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.user-card p {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.user-card button {
+    width: 8em;
+    height: 2.5em;
+    margin-top: 2em;
+    background-color: #af793b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    border: 1pt solid #6d7045;
+    border-radius: 0.5em;
+}
+
+.user-card button:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.2s;
+}

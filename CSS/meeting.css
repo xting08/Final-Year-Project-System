@@ -1,0 +1,178 @@
+body {
+    background-color: #fffcef;
+}
+
+fieldset {
+    border: none;
+    padding: 2em 3.5em 0.5em 3.5em;
+    font-weight: 700;
+    color: #47492b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+input[type="text"], input[type="time"] {
+    font-weight: 700;
+    cursor: pointer;
+    width: 16%;
+    padding: 0.5em 1em;
+    margin-right: 2em;  
+    border: 1.5pt solid #8f9148;
+    border-radius: 0.5em;
+    background-color: #efead7;
+    color: #47492b;
+}
+
+select {
+    margin-right: 0;
+    font-weight: 700;
+    cursor: pointer;
+    width: 18.67%;
+    padding: 0.5em 1em;
+    border: 1.5pt solid #8f9148;
+    border-radius: 0.5em;
+    background-color: #efead7;
+    color: #47492b;
+}
+
+.meeting-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+#physical, #virtual {
+    margin-left: 2em;
+}
+
+#meetingLinkDiv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 2.2em;
+    margin-left: 0em;
+    padding: 0;
+}
+
+#meetingLink {
+    margin-left: 1em;
+    width: 100%;
+    padding: 0;
+    margin-top: 2em;
+}
+
+#linkInput {
+    width: 50%;
+}
+
+input[type="submit"] {
+    font-weight: 700;
+    cursor: pointer;
+    width: 8.5%;
+    padding: 0.5em 1em;
+    margin-left: 2.6em;
+    border: 1.5pt solid #7e3c3e;
+    border-radius: 0.5em;
+    background-color: #af793b;
+    color: white;
+    transition: 0.2s;
+    margin-top: 2.2em;
+}
+
+input[type="submit"]:hover {
+    background-color: #6d7045;
+    border: 1.5pt solid #47492b;
+    transform: scale(1.05);
+}
+
+.month {
+    border-top: 2px solid #47492b;
+    border-left: 2px solid #47492b;
+    border-right: 2px solid #47492b;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 1.5em 3.5em;
+    margin-top: 1em;
+    text-align: center;
+    color: #47492b;
+    background-color: #efead7;
+}
+
+
+
+.month ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.meeting-information {
+    padding: 1.5em 3.5em;
+}
+
+.prev {
+    float: left;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.next {
+    float: right;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.05);
+}
+
+.calendar {
+    width: 100%;
+    padding: 1em 3.5em;
+    border: 2px solid #47492b;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    color: #47492b;
+
+}
+
+thead {
+    background-color: #8f9148;
+    color: white;
+}
+
+.calendar th, td {
+    border: 2px solid #47492b;
+    height: 50px;
+    padding: 10px; 
+}
+
+
+.upload-btn, .book-btn, .view-btn {
+    background-color: #8f9148;
+    border: 2px solid #6d7045;
+    border-radius: 0.5em;
+    color: white;
+    padding: 8px 15px; 
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.dlt-btn {
+    background-color: #7e3c3e;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    color: white;
+    padding: 8px 22.5px; 
+    cursor: pointer;
+    font-size: 14px; 
+    margin-top: 1em; 
+}

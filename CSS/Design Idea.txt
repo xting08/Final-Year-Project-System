@@ -1,0 +1,12 @@
+Website Color Code
+
+#fffcef
+#efead7
+#d3cdad
+#8f9148
+#6d7045
+#47492b
+#af793b
+#7e3c3e
+
+Website Font - Poppins, sans-serif

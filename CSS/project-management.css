@@ -1,0 +1,187 @@
+body {
+    background-color: #fffcef;
+}
+
+main,
+#supervisor-project,
+#project-approval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0em;
+}
+
+main {
+    width: 100%;
+}
+
+#supervisor-project,
+#project-approval {
+    width: 92.5%;
+}
+
+#add-project,
+#project-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1.2pt dashed #8f9148;
+    color: #47492b;
+}
+
+#add-title-form,
+#search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    gap: 1em;
+    padding: 1em 0em;
+}
+
+#add-title-form input,
+#add-title-form select,
+#add-title-form button,
+#project-search input,
+#project-search button {
+    width: 30%;
+    padding: 0.5em;
+    border: 1pt solid #8f9148;
+    border-radius: 5px;
+    text-align: center;
+    color: #47492b;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+}
+
+#add-title-form button,
+#project-search button {
+    background-color: #af793b;
+    color: #fffcef;
+    cursor: pointer;
+    border: 1pt solid #7e3c3e;
+}
+
+#add-title-form button:hover,
+#project-search button:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.2s;
+}
+
+button > i {
+    padding-left: 0.5em;
+}
+
+#project-table {
+    padding: 1.5em 0em;
+    width: 100%;
+}
+
+#project-table > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5em;
+
+}
+
+#project-table th {
+    background-color: #d3cdad;
+    color: #47492b;
+    font-weight: bold;
+    text-align: center;
+}
+
+#project-table th,
+#project-table td {
+    padding: 1em;
+    border: 1pt solid #8f9148;
+    text-align: center;
+    color: #47492b;
+}
+
+#project-table tr:hover {
+    transition: ease-in-out 0.2s;
+}
+
+#project-table tr:hover{
+    background-color: #efead7;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    margin-top: 2em;
+    padding: 0.5em 2em;
+    border: 1pt solid #8f9148;
+    border-radius: 1em;
+}
+
+.project-card > .student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding-right:2em;
+    border-right: 1pt solid #8f9148;
+}
+
+.project-card > .student > h3 {
+    color: #47492b;
+    padding: 0em;
+    margin: 0.5em 0em;
+}
+
+.project-card > .student > h5 {
+    color: #af793b;
+    padding: 0em;
+    margin: 0.3em;
+}
+
+.project-card > .project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding: 1em 0em;
+}
+
+.project-card > .project-details > h3 {
+    color: #47492b;
+}
+
+.project-card > .project-details > p {
+    color: #47492b;
+}
+
+.project-card > .view-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30%;
+    padding: 1em 0em;
+}
+
+.project-card > .view-btn > button {
+    background-color: #af793b;
+    color: #fffcef;
+    cursor: pointer;
+    border: 1pt solid #7e3c3e;
+    padding: 1em 3em;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.project-card > .view-btn > button:hover {
+    background-color: #7e3c3e;
+    transform: scale(1.05);
+}

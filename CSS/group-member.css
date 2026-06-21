@@ -1,0 +1,108 @@
+body {
+    background-color: #fffcef;
+}
+
+main {
+    padding: 3em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h1 {
+    margin: 0;
+    padding-bottom: 1.3em;
+    font-size: 2em;
+    color: #47492b;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
+    border: 2pt solid #6d7045;
+    border-radius: 1em;
+    background-color: #efead7;
+}
+
+figure > img {
+    margin: 0;
+    width: 20em;
+    border-radius: 1em;
+}
+
+.member-card > div {
+    margin: 0;
+    padding: 0;
+    color: #47492b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.member-card > div > h1,
+.member-card > div > p {
+    margin: 0;
+    padding: 0;
+}
+
+.member-card > div > h1 {
+    font-size: 1.5em;
+}
+
+.member-card > div > hr {
+    width: 80%;
+    border: 1pt solid #d3cdad;
+    margin: 0;
+    padding: 0;
+}
+
+.member-card > div > p {
+    font-size: 1.3em;
+}
+
+.member-card > div > button {
+    text-decoration: none;
+    color: #efead7;
+    background-color: #af793b;
+    border: 1pt solid #6d7045;
+    border-radius: 1em;
+    width: 24em;
+    height: 3.5em;
+    transition: ease-in-out 0.2s;
+}
+
+.member-card > div > button:hover {
+    border: 1pt solid #47492b;
+    background-color: #6d7045;
+    color: #d3cdad;
+    transform: scale(1.05);
+}
+
+.member-card > div > button > i {
+    margin: 0em 0.5em;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.member-card > div > button > a:link {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #efead7;
+}
+

@@ -1,0 +1,108 @@
+body {
+    background-color: #fffcef;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0em;
+}
+
+h1 {
+    color: #47492b;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 89%;
+    gap: 1.5em;
+}
+
+details {
+    background-color: #efead7;
+    border: 1px solid #8f9148;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 0em 2em;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+summary > h3 {
+    color: #47492b;
+}
+
+summary > i {
+    color: #47492b;
+}
+
+details > hr {
+    width: 100%;
+    justify-self: center;
+    border: 1pt dashed #d3cdad;
+    margin:0;
+}
+
+h4 {
+    color: #47492b;
+    text-align: justify;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 2em 0em;
+    gap: 1em;
+}
+
+#contact > button {
+    background-color: #af793b;
+    color: #fffcef;
+    border: 1pt solid #7e3c3e;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    margin: 0em;
+    cursor: pointer;
+    font-size: 14px;
+    transition: ease-in-out 0.2s;
+}
+
+#contact > button:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05);
+}
+
+#contact > button > i {
+    font-size: large;
+    font-weight: bolder;
+    color: #fffcef;
+    text-decoration: none;
+    padding-right: 0.5em; 
+}
+
+#contact > button > a:link {
+    font-size: large;
+    font-weight: bolder;
+    color: #fffcef;
+    text-decoration: none;
+}
+
+
+

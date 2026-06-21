@@ -1,0 +1,176 @@
+.container {
+    margin-top: 1em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-bottom: 1em;;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border-radius: 0.5em;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3cdad;
+}
+
+.profile-container {
+    display: flex;
+    padding-top: 1em;
+}
+
+
+.col-left {
+    flex: 1;
+    text-align: center;
+    padding-right: 1em;
+    border-right: 1px solid #d3cdad;
+}
+
+.col-right {
+    flex: 2;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+label {
+    color: #6d7045;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #6d7045;
+    border-radius: 5px;
+    color: #47492b;
+    box-sizing: border-box;
+    size: 16px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+}
+
+.editable {
+    position: relative;
+    width: 100%;
+}
+
+.change-password {
+    position: relative;
+    width: 100%;
+}
+
+.editable .fa-pen {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d7045;
+}
+
+.change-password .fa-lock{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6d7045;
+}
+
+#profile-form {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 50px;
+}
+
+table td {
+    padding-bottom: 25px;
+}
+
+.upload-btn {
+    display: inline-block;
+    background-color: #8f9148;
+    border: 2px solid #6d7045;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 15px; 
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; 
+    height: 24px; 
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px; 
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; 
+    width: 16px; 
+    left: 4px; 
+    bottom: 4px; 
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #8f9148;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px); 
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#btn-area {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; 
+}

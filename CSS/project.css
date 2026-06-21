@@ -1,0 +1,415 @@
+body {
+    background-color: #fffcef;
+}
+
+main {
+    width: 100%;
+    padding: 0em em 0em 0em;
+}
+
+#progress {
+    background-color: #efead7;
+    color: #47492b;
+    position: fixed;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 8em 3em 2em 3em;
+    height: 100vh;
+    z-index: -1;
+}
+
+progress {
+    width: 100%;
+    height: 1em;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #af793b;
+    border-radius: 0.5em;
+}
+
+progress[value] {
+    color: #fffcef;
+}
+
+#progress > hr, 
+#planning > hr,
+details > hr,
+#submission > #line {
+    border: 0.5pt dashed #8f9148;
+    width: 100%;
+}
+
+#project {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 67%;
+    padding: 1em 3.5em;
+}
+
+.title-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color : #47492b;
+}
+
+.title-button > input[type="checkbox"] {
+    display: none;
+}
+
+.title-button > label {
+    background-color: #af793b;
+    color: #fffcef;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 14px;
+    transition: ease 0.2s;
+}
+
+.title-button > label:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.05);
+}
+
+#plan-display {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5em 0em;
+    gap: 1em;
+}
+
+details {
+    background-color: #efead7;
+    border: 1px solid #8f9148;
+    border-radius: 0.5em;
+    width: 30%;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+summary:hover {
+    background-color: #e2ddc1;
+    transition: ease-in-out 0.2s;
+    border-radius: 0.5em;
+}
+
+#week {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+#week span {
+    font-weight: bold;
+    color : #47492b;
+    padding-right: 1em;
+    border-right: 1.5pt solid #d3cdad;
+}
+
+#week > input[type="checkbox"] {
+    display: none;
+}
+
+#week > label {
+    background-color: #af793b;
+    color: #fffcef;
+    border: 1pt solid #7e3c3e;
+    border-radius: 0.2em;
+    padding: 0em 0.5em;
+    margin: 0em;
+    cursor: pointer;
+    font-size: 14px;
+    transition: ease 0.2s;
+}
+
+#week > label:hover {
+    background-color: #7e3c3e;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.05);
+}
+
+summary > i {
+    font-size: 14px;
+    color: #47492b;
+    text-align: right;
+    padding: 0em;
+    margin: 0;
+}
+
+details > hr {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    justify-self: center;
+}
+
+.items {
+    margin-top: 1.5em;
+    padding: 0em 1em;
+    list-style-type: none;
+}
+
+.items li,
+.items li > label {
+    padding: 0.4em 0em;
+    font-size: medium;
+    font-weight: lighter;
+    color: #47492b;
+    cursor: pointer;
+}
+
+
+
+span + .status{
+    font-size: 14px;
+    font-style: italic;
+    padding: 0em 1em;
+    margin: 0;
+}
+
+span + .approve {
+    color: #8f9148;
+}
+
+span + .reject {
+    
+    color: #7e3c3e;
+    
+}
+
+span + .pending {
+    color: #af793b;
+}
+
+li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #d3cdad;
+}
+
+#add-plan-form,
+#edit-plan-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 3em 0em;
+    background-color: #af793b;
+    border: 1px solid #7e3c3e;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em #4345282c;
+}
+
+#add-plan-form > .close-plan,
+#edit-plan-form > .close-plan {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#add-plan-form > .close-plan > i,
+#edit-plan-form > .close-plan > i {
+    font-size: 2em;
+    color: #efead7;
+    margin-top: -1em;
+    padding: 0em 0.5em;
+    align-self: flex-end;
+    text-align: right;
+}
+
+#add-plan-form > h1,
+#edit-plan-form > h1 {
+    font-size: 2em;
+    color: #efead7;
+    font-weight: bolder;
+    padding: 0;
+    margin-top: -0.5em;
+}
+
+#add-plan-form > input,
+#add-plan-form > select,
+#edit-plan-form > input,
+#edit-plan-form > select {
+    margin-bottom: 1.5em;
+    width: 60%;
+    height: 2.7em;
+    border: 0.1em solid #6d7045;
+    border-radius: 0.5em;
+    text-align: center;
+    color: #6d7045;
+    font-weight: bold;
+}
+
+#add-plan-form > select,
+#edit-plan-form > select {
+    width: 61%;
+}
+
+#add-plan-form > input::placeholder {
+    color: #6d7045;
+    font-weight: bold;
+    text-align: center;
+}
+
+#add-plan-form button,
+#edit-plan-form button {
+    height: 2.7em;
+    width: 61%;
+    background-color: #d3cdad;
+    border:1pt solid #7e3c3e;
+    color: #7e3c3e;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 0.5em;
+}
+
+#add-plan-section,
+#edit-plan-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -7em;
+    margin-left: -29.5%; 
+    padding: 3em 0em;
+    background-color: #efead785;
+    border-radius: 0.5em;
+    position: fixed;
+    z-index: 999;
+}
+
+#add-plan:checked ~ #add-plan-section,
+#edit-plan:checked ~ #edit-plan-section{
+    display: flex;
+}
+
+#cut-line {
+    border: 1pt solid #7e3c3e;
+}
+
+#submission > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#submission > ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 0em;
+    border-bottom: 1pt solid #efead7;
+}
+
+#submission > ul > li:last-child {
+    border-bottom: none;
+}
+
+#submission > ul > li > h3 {
+    padding:0;
+    margin: 0;
+    font-weight: bold;
+    color: #47492b;
+}
+
+#submission > ul > li > input[type="file"] {
+    color: #47492b;
+    font-weight: lighter;
+    cursor: pointer;
+    padding: 0.5em;
+    border: 1pt solid #47492b;
+    border-radius: 0.5em;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #6d7045;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #5a5d3a;
+}
+
+button[type="button"], 
+button[type="submit"],
+.submit-button,
+.edit-button {
+    background-color: #6d7045;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: ease 0.2s;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #5a5d3a;
+    transform: scale(1.05);
+}
+
+.cross {
+    color: #7e3c3e;
+    cursor: pointer;
+}
+
+.check {
+    color: #8f9148;
+    cursor: pointer;
+}
+
+.submission {
+    background-color: #af793b;
+    color: #fffcef;
+    border: 1pt solid #7e3c3e;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+}

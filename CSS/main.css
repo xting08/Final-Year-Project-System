@@ -1,0 +1,107 @@
+body {
+    background-color: #fffcef;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1.7em 0.5em;
+}
+
+#announcement {
+    background-color: #efead7;
+    border: 1.7pt solid #8f9148;
+    border-radius: 1em;
+    padding: 1.5em 2.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 88%;
+    color: #3a3b25;
+}
+
+h3 > i {
+    color: #7e3c3e;
+    padding: 0 0.3em 0em 0em;
+}
+
+hr {
+    border: 1pt solid #8f9148;
+    width: 100%;
+}
+
+#announcement ul {
+    margin: 0;
+    padding: 0;
+}
+
+#announcement li {
+    list-style-type: none;
+    border-bottom: 1pt solid #d3cdad;
+}
+
+#announcement li:last-child {
+    border-bottom: none;
+}
+
+#announcement li a:link {
+    color: #3a3b25;
+    text-decoration: none;
+}
+
+#announcement li a:hover {
+    color: #7e3c3e;
+    text-decoration: none;
+}
+
+#announcement li a:visited {
+    color: #47492b;
+    text-decoration: none;
+}
+
+#quick-access {
+    width:93.4%;
+    padding-top: 2em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#quick-access button {
+    width: 20%;
+    height: 27vh;
+    background-color: #efead7;
+    border: 1.7pt solid #8f9148;
+    border-radius: 1em;
+    padding: 1.5em 2.5em;
+    transition: ease-in-out 0.2s;
+}
+
+#quick-access button:hover {
+    background-color: #d3cdad;
+    transform: scale(1.01);
+}
+
+button > i,
+button > h2 {
+    color: #47492b;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+button > i {
+    font-size: 3em;
+    padding-bottom: 0.3em;
+}
+
+button > h2 {
+    font-size: 1.2em;
+}
